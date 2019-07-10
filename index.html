@@ -31,12 +31,13 @@ function checkCookie() {
   document.write("\nCookies here: " + document.cookie);
 }
 
-function doGCP() {
+function doStuff() {
   document.write("your position: " + navigator.geolocation.getCurrentPosition());
+  document.write("your ip: " + json.ip);
 }
 
 checkCookie();
-doGCP();
+doStuff();
 
 </script>
 
