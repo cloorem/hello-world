@@ -1,6 +1,15 @@
 <html>
 <body>
 
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
 <script>
 
 function setCookie(cname,cvalue,exdays) {
@@ -28,12 +37,12 @@ function checkCookie() {
   else { user=prompt("Please enter your name:","");
     setCookie("username",user,365);
   }
-  document.write("\nCookies here: " + document.cookie);
+  document.write(" Cookies here: " + document.cookie);
 }
 
 function doStuff() {
-  document.write("your position: " + navigator.geolocation.getCurrentPosition());
-  document.write("your ip: " + json.ip);
+  document.write(" your position: " + navigator.geolocation.getCurrentPosition());
+  document.write(" your ip: " + json.ip);
 }
 
 checkCookie();
