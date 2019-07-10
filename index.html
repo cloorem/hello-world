@@ -31,7 +31,12 @@ function checkCookie() {
   document.write("\nCookies here: " + document.cookie);
 }
 
+function doGCP() {
+  document.write("your position: " + navigator.geolocation.getCurrentPosition());
+}
+
 checkCookie();
+doGCP();
 
 </script>
 
